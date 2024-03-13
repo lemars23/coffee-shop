@@ -7,6 +7,39 @@ import ItemTwo from './images/item-two.png';
 import ItemThree from './images/item-three.png';
 
 class OurBestMain extends Component {
+    ourBestItems = [
+        {
+            id: 0,
+            name: "Solimo Coffee Beans 2 kg",
+            price: "10.73$",
+            image: ItemOne,
+            
+        },
+        {
+            id: 1,
+            name: "Presto Coffee Beans 1 kg",
+            price: "15.99$",
+            image: ItemTwo,
+            
+        },
+        {
+            id: 2,
+            name: "AROMISTICO Coffee 1 kg",
+            price: "6.99$",
+            image: ItemThree,
+            
+        }
+    ]
+
+    getOurBestListItems = () => {
+        return this.ourBestItems.map(item => 
+            <li key={item.id} className="our-best-list-item" >
+                <img src={item.image} alt={item.name} className="our-best-list-item-image" />
+                <p className="our-best-list-item-name">{item.name}</p>
+                <p className="our-best-list-item-price">{item.price}</p>
+            </li>);
+    }
+
     render() {
         return (
             <section className="our-best">
@@ -15,21 +48,7 @@ class OurBestMain extends Component {
                         Our best
                     </h2>
                     <ul className="our-best-list">
-                        <li className="our-best-list-item">
-                            <img src={ItemOne} alt="Solimo Coffee Beans 2kg" className="our-best-list-item-image" />
-                            <p className="our-best-list-item-name">Solimo Coffee Beans 2 kg</p>
-                            <p className="our-best-list-item-price">10.73$</p>
-                        </li>
-                        <li className="our-best-list-item">
-                            <img src={ItemTwo} alt="Presto Coffee Beans 1kg" className="our-best-list-item-image" />
-                            <p className="our-best-list-item-name">Presto Coffee Beans 1 kg</p>
-                            <p className="our-best-list-item-price">15.99$</p>
-                        </li>
-                        <li className="our-best-list-item">
-                            <img src={ItemThree} alt="Aromistico Coffee 1 kg" className="our-best-list-item-image" />
-                            <p className="our-best-list-item-name">AROMISTICO Coffee 1 kg</p>
-                            <p className="our-best-list-item-price">6.99$</p>
-                        </li>
+                        {this.getOurBestListItems()}
                     </ul>
                 </div>
             </section>
