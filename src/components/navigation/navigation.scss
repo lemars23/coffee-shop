@@ -1,4 +1,36 @@
-.nav-list {
-    margin: 0;
-    padding: 0;
+.nav {
+    padding-top: 30px;
+    &-list {
+        margin: 0 auto;
+        padding: 0;
+        width: 973px;
+        display: flex;
+        align-items: end;
+
+        &-item {
+            list-style: none;
+
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
+
+            &-link {
+                text-decoration: none;
+                
+                &-color-white {
+                    color: #fff;
+                }
+
+                &-color-black {
+                    color: #000;
+                }
+
+                &-logo-white {
+                    position: relative;
+                    left: 9px;
+                    top: 5px;
+                }
+            }
+        }
+    }
 }

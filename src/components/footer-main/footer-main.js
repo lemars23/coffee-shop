@@ -1,11 +1,18 @@
 import { Component } from "react";
+import Navigation from '../navigation/navigation';
+import Separator from '../separator/separator';
 
 import './footer-main.scss';
 
 class FooterMain extends Component {
     render() {
         return (
-            <h2 className="footer">Footer Component</h2>
+            <footer className="footer">
+                <div className="container">
+                    <Navigation color="black"/>
+                    <Separator marginTop={35}/>
+                </div>
+            </footer>
         );
     }
 }

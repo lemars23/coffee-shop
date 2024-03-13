@@ -1,0 +1,10 @@
+
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-icon {
+        margin: 0 17px;
+    }
+}
