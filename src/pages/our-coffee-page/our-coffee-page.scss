@@ -1,0 +1,25 @@
+.our-coffee {
+    padding: 60px 0 30px;
+
+    &-content {
+        text-align: center;
+        word-spacing: 5px;
+        font-size: 1.1666em;
+        line-height: 1.5;
+    
+        &-text {
+            margin: 0;
+        }
+    }
+
+    &-panel {
+        display: flex;
+        justify-content: center;
+        column-gap: 83px;
+    }
+
+    .list-card {
+        margin-top: 61px;
+    }
+}
+

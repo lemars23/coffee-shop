@@ -1,0 +1,13 @@
+.header_secondary {
+    background-image: url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 100%;
+    &-title {
+        margin: 65px 0 0;
+        padding-bottom: 73.5px;
+        text-align: center;
+        color: #fff;
+        font-size: 3.334em;
+    }
+}

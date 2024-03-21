@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-import Navigation from "../navigation/navigation";
+import Navigation from "../navigation-main/navigation-main";
 import Separator from "../separator/separator";
 
 import './header-main.scss';

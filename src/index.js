@@ -1,20 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import HeaderMain from './components/header-main/header-main';
-import AboutUsMain from './components/about-us-main/about-us-main';
-import OurBestMain from './components/our-best-main/our-best-main';
-import FooterMain from './components/footer-main/footer-main';
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
 import './index.scss';
+
+import HomePage from './pages/home-page/home-page';
+import OurCoffeePage from './pages/our-coffee-page/our-coffee-page';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HeaderMain/>
-    <AboutUsMain/>
-    <OurBestMain/>
-    <FooterMain/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/our-coffee" element={<OurCoffeePage/>} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );

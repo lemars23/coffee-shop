@@ -1,0 +1,20 @@
+.search-coffee-name {
+    margin-right: 19px;
+    font-size: 1.1667em;
+}
+
+.search-coffee-text {
+    padding: 6px 0;
+    width: 180px;
+    height: 18px;
+    text-align: center;
+    border: 0;
+    box-shadow: 4px 4px 20px rgba(0,0,0,0.25);
+}
+
+.search-coffee-text:active,
+.search-coffee-text:focus {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #ccc;
+}

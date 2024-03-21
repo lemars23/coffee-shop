@@ -1,0 +1,26 @@
+.about_secondary {
+    padding: 70px 0;
+
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+
+        &-content {
+            width: 43.2%;
+
+            &-title {
+                margin: 0;
+                font-size: 2em;
+                text-align: center;
+            }
+
+            .separator {
+                margin-bottom: 26px;
+            }
+        }
+
+        &-image {
+            background-position: 30%;
+        }
+    }
+}
